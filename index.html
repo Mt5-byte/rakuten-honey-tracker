@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rakuten vs Honey cash-back tracker</title>
+<meta name="description" content="Every cash-back rate on Rakuten and Honey, checked twice a day, with history, boosts and spike alerts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="alternate" type="application/rss+xml" title="Rate spikes" href="data/feed.xml">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='14' height='32' rx='3' fill='%23b3002d'/%3E%3Crect x='18' y='10' width='14' height='22' rx='3' fill='%23e6a100'/%3E%3C/svg%3E">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1 class="brand"><span class="r">Rakuten</span><span class="vs">vs</span><span class="h">Honey</span> cash back</h1>
+    <div class="top-meta">
+      <span id="last-check"></span>
+      <span id="next-check"></span>
+    </div>
+    <button id="theme" class="theme-btn" type="button" aria-label="Switch light or dark theme" title="Light / dark">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg>
+    </button>
+  </header>
+  <p class="lede" id="lede"></p>
+
+  <div id="boot" class="loading">Loading the latest rates…</div>
+
+  <main id="app" hidden>
+    <section class="boosts" id="boosts" hidden aria-labelledby="boosts-title">
+      <div class="boosts-head"><h2 id="boosts-title">Boosted right now</h2><span id="boosts-count"></span></div>
+      <div class="strip" id="strip"></div>
+    </section>
+
+    <div class="controls">
+      <label class="search"><span class="visually-hidden">Search stores</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Search stores (press /)" autocomplete="off" spellcheck="false">
+      </label>
+      <div class="segs">
+      <div class="seg" role="group" aria-label="View">
+        <button type="button" data-view="table" aria-pressed="true">Rates</button>
+        <button type="button" data-view="alerts">Spikes</button>
+      </div>
+      <div class="seg" id="filters" role="group" aria-label="Filter stores">
+        <button type="button" data-filter="all">All</button>
+        <button type="button" data-filter="boosted">Boosted</button>
+        <button type="button" data-filter="both">Paying on both</button>
+        <button type="button" data-filter="rakuten">Rakuten</button>
+        <button type="button" data-filter="honey">Honey</button>
+      </div>
+      </div>
+      <label class="select">Sort
+        <select id="sort">
+          <option value="boost">Biggest boost</option>
+          <option value="best">Highest rate</option>
+          <option value="r">Rakuten rate</option>
+          <option value="h">Honey rate</option>
+          <option value="recent">Recently changed</option>
+          <option value="name">Name</option>
+        </select>
+      </label>
+      <span class="count" id="count" aria-live="polite"></span>
+    </div>
+
+    <section id="view-table" class="table" role="table" aria-label="Cash-back rates by store">
+      <div class="thead" role="row">
+        <div role="columnheader"><button type="button" class="sortable" data-sort="name">Store</button></div>
+        <div role="columnheader"><button type="button" class="sortable" data-sort="r">Rakuten</button></div>
+        <div role="columnheader"><button type="button" class="sortable" data-sort="h">Honey</button></div>
+        <div role="columnheader" class="right">90-day high</div>
+        <div role="columnheader">Last 90 days</div>
+      </div>
+      <div id="tbody" role="rowgroup"></div>
+      <button type="button" class="more" id="more" hidden>Show more</button>
+    </section>
+
+    <section id="view-alerts" class="alerts" hidden aria-label="Rate spikes">
+      <div id="alerts"></div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="cols">
+      <div>
+        <h3>How it works</h3>
+        <p>A script fetches every store listed on rakuten.com and joinhoney.com twice a day (about 5:17 and 17:17 UTC), records the rate each site shows, and keeps every change. Stores are matched across the two sites by name and web address.</p>
+      </div>
+      <div>
+        <h3>Reading the numbers</h3>
+        <p>Rakuten pays cash back as a percentage of the purchase, sometimes a flat dollar amount. Honey pays PayPal Rewards points; 100 points is about $1. “Up to” means the rate depends on the category. A store counts as boosted when its current rate is clearly above the rate the site itself showed before.</p>
+      </div>
+      <div>
+        <h3>Spikes</h3>
+        <p>A spike is a rate that jumped since the last check: at or above 10%, up 5 points or more, at least double the usual rate, or a new all-time high. Spikes are posted to a GitHub issue thread and to the <a href="data/feed.xml">RSS feed</a>. Rates are public figures from each site and are not advice; always confirm on the store page before buying.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-label="Store details">
+  <button type="button" class="close" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div id="drawer-body"></div>
+</aside>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

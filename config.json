@@ -1,0 +1,18 @@
+{
+  "site_title": "Rakuten vs Honey Cash-Back Tracker",
+  "site_url": "https://mt5-byte.github.io/rakuten-honey-tracker/",
+  "schedule_utc": ["05:17", "17:17"],
+  "alerts": {
+    "min_rate_pct": 10,
+    "min_increase_points": 5,
+    "boost_multiplier": 2.0,
+    "new_all_time_high_after_days": 7,
+    "watchlist": []
+  },
+  "lookup": {
+    "retry_misses_days": 14,
+    "max_lookups_per_run": 300
+  },
+  "manual_pairs": {},
+  "never_pair": []
+}

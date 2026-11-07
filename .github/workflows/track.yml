@@ -1,0 +1,79 @@
+name: Track cash-back rates
+
+on:
+  schedule:
+    # Twice a day, at 05:17 and 17:17 UTC (00:17 / 12:17 US Eastern in winter).
+    # Off the hour on purpose: GitHub delays jobs that all start at :00.
+    - cron: "17 5,17 * * *"
+  workflow_dispatch:
+    inputs:
+      max_lookups:
+        description: "Max Honey lookups for unmatched Rakuten stores this run"
+        default: "300"
+        required: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: track
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch rates from Rakuten and Honey
+        run: |
+          python -m scraper.run --data-dir data --config config.json \
+            --max-lookups "${{ github.event.inputs.max_lookups || '300' }}"
+
+      - name: Commit updated data
+        id: commit
+        run: |
+          git config user.name "rate-tracker[bot]"
+          git config user.email "rate-tracker[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          SUMMARY=$(python - <<'EOF'
+          import json
+          m = json.load(open("data/latest.json"))["meta"]
+          c = m["counts"]
+          print(f"data: {m['generated_at'][:16]}Z — {c['stores']} stores, {c['boosted_rakuten']} Rakuten / {c['boosted_honey']} Honey boosted, {c['alerts']} spikes")
+          EOF
+          )
+          git commit -q -m "$SUMMARY"
+          # Retry the push in case another run landed in between.
+          for i in 1 2 3; do
+            git push && break
+            git pull --rebase -q && sleep 3
+          done
+
+      - name: Post spikes to the alerts issue
+        if: ${{ hashFiles('data/alert_comment.md') != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          NUM=$(gh issue list --repo "$REPO" --label rate-alerts --state open --json number --jq '.[0].number')
+          if [ -z "$NUM" ]; then
+            gh label create rate-alerts --repo "$REPO" --color D93F0B --description "Cash-back rate spikes" 2>/dev/null || true
+            NUM=$(gh issue create --repo "$REPO" --label rate-alerts \
+              --title "Cash-back rate spikes" \
+              --body "Each check that finds a spike adds a comment here. Subscribe to this issue (or watch the repo) to get them by email; the RSS feed is at data/feed.xml on the site." \
+              | grep -o '[0-9]*$')
+          fi
+          gh issue comment "$NUM" --repo "$REPO" --body-file data/alert_comment.md
