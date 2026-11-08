@@ -54,8 +54,8 @@ def detect(rows: list[dict], prev_rows_by_key: dict[str, dict] | None, config: d
             if baseline is None or baseline <= 0:
                 baseline = cur.get("typical")
             if kind == "pct":
-                if cur["rate"] >= min_rate:
-                    reasons.append(f"at or above {min_rate:g}%")
+                if cur["rate"] >= min_rate and (prev is None or prev < min_rate):
+                    reasons.append(f"crossed {min_rate:g}%")
                 if prev is not None and cur["rate"] - prev >= min_jump:
                     reasons.append(f"+{cur['rate'] - prev:g} points since last check")
             if baseline and baseline > 0 and cur["rate"] >= mult * baseline and cur["rate"] > baseline:

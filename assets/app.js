@@ -197,7 +197,7 @@
     if (rec.boosted) ctx += `<span class="tag">Boosted</span>`;
     if (rec.boosted && base) ctx += `<span class="was">was <s>${esc(pct(base))}</s></span>`;
     else if (rec.typical != null && isPct && Math.abs(rec.typical - rec.rate) > 0.01) ctx += `<span class="was">usually ${esc(pct(rec.typical))}</span>`;
-    return `<div class="rate ${site}${isBest ? " win" : ""}" aria-label="${SITE[site]}: ${esc(rateText(rec))}${rec.boosted && base ? `, boosted from ${esc(pct(base))}` : ""}${isBest ? ", pays more" : ""}">
+    return `<div class="rate ${site}${isBest ? " win" : ""}${isPct ? "" : " nobar"}" aria-label="${SITE[site]}: ${esc(rateText(rec))}${rec.boosted && base ? `, boosted from ${esc(pct(base))}` : ""}${isBest ? ", pays more" : ""}">
       <span class="ctx">${ctx}</span>
       <span class="bar" aria-hidden="true">${isPct ? `<i class="${clip ? "clip" : ""}" style="width:${w}%"></i>` : ""}</span>
       <span class="val">${rec.up_to ? '<small class="pre">up to</small>' : ""}${esc(p.big)}${p.unit ? `<small>${esc(p.unit)}</small>` : ""}</span>
@@ -507,7 +507,7 @@
     for (const a of state.alerts) { if (!groups.has(a.ts)) groups.set(a.ts, []); groups.get(a.ts).push(a); }
     const rss = `<p><a class="rss" href="data/feed.xml"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="5" cy="19" r="2.5"/><path d="M3 10a11 11 0 0 1 11 11h-3a8 8 0 0 0-8-8zm0-6a17 17 0 0 1 17 17h-3A14 14 0 0 0 3 7z"/></svg>Subscribe to spikes (RSS)</a></p>`;
     if (!groups.size) {
-      el.innerHTML = `<div class="empty"><b>No spikes recorded yet.</b> A spike is a rate that jumped since the previous check: at or above ${state.meta?.alert_min_rate ?? 10}%, up 5 points or more, at least double a store's usual rate, or a new all-time high. The first comparison happens on the second check.</div>${rss}`;
+      el.innerHTML = `<div class="empty"><b>No spikes recorded yet.</b> A spike is a rate that jumped since the previous check: crossed 10%, up 5 points or more, at least double a store's usual rate, or a new all-time high. The first comparison happens on the second check.</div>${rss}`;
       return;
     }
     el.innerHTML = rss + [...groups.entries()].map(([ts, list]) => `

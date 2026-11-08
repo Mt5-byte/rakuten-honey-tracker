@@ -243,6 +243,7 @@ def pair_stores(rak_stores: list[dict], honey_top_raw: list[dict], store_map: di
             pairs_out[rid] = raw
     paired_honey = set(paired.values())
     honey_only = [raw for sid, raw in top.items() if sid not in paired_honey]
+    stats["honey_total"] = len(top)
     stats["pairs"] = len(pairs_out)
     stats["honey_only"] = len(honey_only)
     stats["extras"] = len(extras)

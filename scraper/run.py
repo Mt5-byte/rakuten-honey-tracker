@@ -216,7 +216,7 @@ def main(argv=None) -> int:
         "counts": {
             "stores": len(rows),
             "rakuten": len(rak_stores),
-            "honey": len(set(str(s["storeId"]) for s in honey_top if not honey.is_junk(s))),
+            "honey": pairing["stats"].get("honey_total", 0),
             "honey_active": honey_active,
             "paired": pairing["stats"].get("pairs", 0),
             "boosted_rakuten": sum(1 for r in rows if (r.get("r") or {}).get("boosted")),

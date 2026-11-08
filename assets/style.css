@@ -218,7 +218,7 @@ button { font: inherit; color: inherit; }
 .rate.h .val, .rate.h .ctx .tag { color: var(--honey-ink); }
 .rate.r .val { color: var(--rakuten); }
 .rate.none .val { color: var(--ink-3); font-weight: 500; font-size: 14px; font-stretch: 90%; }
-.rate.none .bar { visibility: hidden; }
+.rate.none .bar, .rate.nobar .bar { visibility: hidden; }
 .rate.win .val::before { content: "▲"; font-size: 10px; vertical-align: 3px; margin-right: 3px; color: var(--good); }
 .high { text-align: right; color: var(--ink-2); font-size: 13.5px; line-height: 1.3; }
 .high b { font-weight: 600; color: var(--ink); }

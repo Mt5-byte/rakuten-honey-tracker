@@ -48,9 +48,9 @@ requests per check with short pauses, and never logs in. A check takes 2–4 min
 - **Boosted** = the site's own previous rate is clearly lower than the current one (Rakuten shows
   this as "was 2%"; Honey exposes the previous offer). The site also shows the duration-weighted
   median of the last 90 days as the "usual" rate once there is history.
-- **Spike** = an increase since the previous check that is at or above `min_rate_pct` (10%), up
-  `min_increase_points` (5) or more, at least `boost_multiplier` (2×) the usual rate, or a new
-  all-time high after a week of history. All of these live in `config.json`; add store names or
+- **Spike** = an increase since the previous check that crosses `min_rate_pct` (10%), is up
+  `min_increase_points` (5) or more, reaches at least `boost_multiplier` (2×) the usual rate, or
+  sets a new all-time high after a week of history. All of these live in `config.json`; add store names or
   keys to `watchlist` to be told about any increase for those stores.
 
 ## Running it yourself
