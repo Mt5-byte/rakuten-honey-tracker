@@ -1,68 +1,41 @@
-### 102 rate spikes — 2026-11-24T03:20:02Z
+### 35 rate spikes — 2026-11-24T15:52:33Z
 
 | Store | Site | Was | Now | Why |
 |---|---|---|---|---|
-| [1-800-PACK-RAT](https://mt5-byte.github.io/rakuten-honey-tracker/#store=1-800-pack-rat) | [Honey](https://www.joinhoney.com/shop/1-800-pack-rat) | 5% | **20%** | crossed 10%; +15 points since last check; 4.0× the usual 5%; new all-time high |
-| [Allure Beauty Box](https://mt5-byte.github.io/rakuten-honey-tracker/#store=allure-beauty-box) | [Honey](https://www.joinhoney.com/shop/allure-beauty-box) | 14% | **20%** | +6 points since last check; new all-time high |
-| [Buddha Stones](https://mt5-byte.github.io/rakuten-honey-tracker/#store=buddha-stones) | [Honey](https://www.joinhoney.com/shop/buddha-stones) | 8% | **20%** | crossed 10%; +12 points since last check; 2.5× the usual 8%; new all-time high |
-| [Dynadot](https://mt5-byte.github.io/rakuten-honey-tracker/#store=dynadot) | [Honey](https://www.joinhoney.com/shop/dynadot) | 19% | **20%** | new all-time high |
-| [YSL Beauty Canada](https://mt5-byte.github.io/rakuten-honey-tracker/#store=ysl-ca) | [Honey](https://www.joinhoney.com/shop/ysl-ca) | 14% | **20%** | +6 points since last check; new all-time high |
-| [AgelessRx](https://mt5-byte.github.io/rakuten-honey-tracker/#store=agelessrx) | [Honey](https://www.joinhoney.com/shop/agelessrx) | 4% | **17%** | crossed 10%; +13 points since last check; 4.2× the usual 4%; new all-time high |
-| [Bug MD](https://mt5-byte.github.io/rakuten-honey-tracker/#store=bug-md) | [Honey](https://www.joinhoney.com/shop/bug-md) | 5% | **15%** | crossed 10%; +10 points since last check; 3.0× the usual 5%; new all-time high |
-| [D.S. & DURGA](https://mt5-byte.github.io/rakuten-honey-tracker/#store=d.s.-&-durga) | [Honey](https://www.joinhoney.com/shop/d.s.-&-durga) | 11% | **15%** | new all-time high |
-| [Cole Haan](https://mt5-byte.github.io/rakuten-honey-tracker/#store=colehaan) | [Honey](https://www.joinhoney.com/shop/cole-haan) | 4% | **12%** | crossed 10%; +8 points since last check; 3.0× the usual 4%; new all-time high |
-| [ESR Tech](https://mt5-byte.github.io/rakuten-honey-tracker/#store=esr-gear) | [Honey](https://www.joinhoney.com/shop/esr-gear) | 8% | **12%** | crossed 10% |
-| [Nomad eSIM](https://mt5-byte.github.io/rakuten-honey-tracker/#store=nomadesim) | [Honey](https://www.joinhoney.com/shop/nomad-esim) | 9% | **11%** | crossed 10% |
-| [Pimsleur](https://mt5-byte.github.io/rakuten-honey-tracker/#store=pimsleur) | [Honey](https://www.joinhoney.com/shop/pimsleur) | 5% | **11%** | crossed 10%; +6 points since last check; 2.2× the usual 5% |
-| [BrainMD](https://mt5-byte.github.io/rakuten-honey-tracker/#store=brainmdhealth) | [Honey](https://www.joinhoney.com/shop/brain-md) | 5% | **10%** | crossed 10%; +5 points since last check; 2.0× the usual 5%; new all-time high |
-| [PuroAir](https://mt5-byte.github.io/rakuten-honey-tracker/#store=getpuroair) | [Honey](https://www.joinhoney.com/shop/puroair) | 8% | **10%** | crossed 10%; new all-time high |
-| [Ugreen](https://mt5-byte.github.io/rakuten-honey-tracker/#store=ugreen) | [Honey](https://www.joinhoney.com/shop/ugreen) | 8% | **10%** | crossed 10%; new all-time high |
-| [Viome](https://mt5-byte.github.io/rakuten-honey-tracker/#store=viome) | [Honey](https://www.joinhoney.com/shop/viome) | 5% | **10%** | crossed 10%; +5 points since last check; 2.0× the usual 5%; new all-time high |
-| [WSS](https://mt5-byte.github.io/rakuten-honey-tracker/#store=shopwss) | [Honey](https://www.joinhoney.com/shop/shop-wss) | 7% | **10%** | crossed 10% |
-| [Narwal](https://mt5-byte.github.io/rakuten-honey-tracker/#store=narwal) | [Honey](https://www.joinhoney.com/shop/narwal) | 7% | **9%** | new all-time high |
-| [Turbify](https://mt5-byte.github.io/rakuten-honey-tracker/#store=turbify) | [Honey](https://www.joinhoney.com/shop/turbify) | 3% | **9%** | +6 points since last check; 3.0× the usual 3% |
-| [Agoda](https://mt5-byte.github.io/rakuten-honey-tracker/#store=agoda) | [Honey](https://www.joinhoney.com/shop/agoda) | 7% | **8%** | new all-time high |
-| [Bella Barnett](https://mt5-byte.github.io/rakuten-honey-tracker/#store=bella-barnett) | [Honey](https://www.joinhoney.com/shop/bella-barnett) | 6% | **8%** | new all-time high |
-| [FamilyTreeDNA](https://mt5-byte.github.io/rakuten-honey-tracker/#store=familytreedna) | [Honey](https://www.joinhoney.com/shop/family-tree-dna) | 7% | **8%** | new all-time high |
-| [PetSafe](https://mt5-byte.github.io/rakuten-honey-tracker/#store=petsafe) | [Honey](https://www.joinhoney.com/shop/petsafe) | 5% | **8%** | new all-time high |
-| [Quaker Marine Supply](https://mt5-byte.github.io/rakuten-honey-tracker/#store=quaker-marine-supply) | [Honey](https://www.joinhoney.com/shop/quaker-marine-supply) | not offered | **8%** | 2.0× the usual 4% |
-| [SteelSeries](https://mt5-byte.github.io/rakuten-honey-tracker/#store=steelseries) | [Honey](https://www.joinhoney.com/shop/steelseries) | 6% | **8%** | new all-time high |
-| [Ancient Nutrition](https://mt5-byte.github.io/rakuten-honey-tracker/#store=ancientnutrition) | [Honey](https://www.joinhoney.com/shop/dr-axe) | 3% | **7%** | 2.3× the usual 3%; new all-time high |
-| [Gamivo US](https://mt5-byte.github.io/rakuten-honey-tracker/#store=gamivo-us) | [Honey](https://www.joinhoney.com/shop/gamivo-us) | 5% | **7%** | new all-time high |
-| [LATHER](https://mt5-byte.github.io/rakuten-honey-tracker/#store=lather) | [Honey](https://www.joinhoney.com/shop/lather) | 4% | **7%** | new all-time high |
-| [Omorovicza](https://mt5-byte.github.io/rakuten-honey-tracker/#store=omorovicza) | [Honey](https://www.joinhoney.com/shop/omorovicza) | 6% | **7%** | new all-time high |
-| [Yelp for Business](https://mt5-byte.github.io/rakuten-honey-tracker/#store=biz.yelp) | [Honey](https://www.joinhoney.com/shop/yelp-for-business-owners) | 1.5% | **7%** | +5.5 points since last check; 4.7× the usual 1.5% |
-| [Manta Sleep](https://mt5-byte.github.io/rakuten-honey-tracker/#store=mantasleep) | [Rakuten](https://www.rakuten.com/shop/mantasleep) | 2% | **6.5%** | 3.2× the usual 2% |
-| [Alphalete](https://mt5-byte.github.io/rakuten-honey-tracker/#store=alphaleteathletics) | [Honey](https://www.joinhoney.com/shop/alphalete-athletics) | 4% | **6%** | new all-time high |
-| [Apparis](https://mt5-byte.github.io/rakuten-honey-tracker/#store=apparis) | [Rakuten](https://www.rakuten.com/shop/apparis) | 3% | **6%** | 2.0× the usual 3% |
-| [Clearly Filtered](https://mt5-byte.github.io/rakuten-honey-tracker/#store=clearlyfiltered) | [Honey](https://www.joinhoney.com/shop/clearly-filtered) | 5% | **6%** | new all-time high |
-| [Fieldsheer](https://mt5-byte.github.io/rakuten-honey-tracker/#store=fieldsheer) | [Honey](https://www.joinhoney.com/shop/fieldsheer) | 4% | **6%** | new all-time high |
-| [Freda Salvador](https://mt5-byte.github.io/rakuten-honey-tracker/#store=freda-salvador) | [Honey](https://www.joinhoney.com/shop/freda-salvador) | 4% | **6%** | new all-time high |
-| [K18 Hair](https://mt5-byte.github.io/rakuten-honey-tracker/#store=k18hair) | [Honey](https://www.joinhoney.com/shop/k18hair) | 5% | **6%** | new all-time high |
-| [Network Solutions](https://mt5-byte.github.io/rakuten-honey-tracker/#store=networksolutions) | [Honey](https://www.joinhoney.com/shop/network-solutions) | 0.5% | **6%** | +5.5 points since last check; 12.0× the usual 0.5%; new all-time high |
-| [Premium Bandai](https://mt5-byte.github.io/rakuten-honey-tracker/#store=p-bandai) | [Honey](https://www.joinhoney.com/shop/premium-bandai-us) | 5% | **6%** | new all-time high |
-| [ShopSimon (formerly Shop Premium Outlets)](https://mt5-byte.github.io/rakuten-honey-tracker/#store=shopsimon) | [Honey](https://www.joinhoney.com/shop/shop-premium-outlets) | 5% | **6%** | new all-time high |
-| [Timebeam](https://mt5-byte.github.io/rakuten-honey-tracker/#store=timebeam) | [Rakuten](https://www.rakuten.com/shop/timebeam) | 3% | **6%** | 2.0× the usual 3% |
-| [Wallism Inc](https://mt5-byte.github.io/rakuten-honey-tracker/#store=wallism-inc) | [Honey](https://www.joinhoney.com/shop/wallism-inc) | 5% | **6%** | new all-time high |
-| [Wavytalk](https://mt5-byte.github.io/rakuten-honey-tracker/#store=wavytalk) | [Honey](https://www.joinhoney.com/shop/wavytalk) | 3% | **6%** | 2.0× the usual 3% |
-| [A.L.C.](https://mt5-byte.github.io/rakuten-honey-tracker/#store=alc) | [Rakuten](https://www.rakuten.com/shop/alc) | 2.5% | **5%** | 2.0× the usual 2.5% |
-| [EnergyBits](https://mt5-byte.github.io/rakuten-honey-tracker/#store=energybits) | [Rakuten](https://www.rakuten.com/shop/energybits) | 2.5% | **5%** | 2.0× the usual 2.5% |
-| [Florasis](https://mt5-byte.github.io/rakuten-honey-tracker/#store=florasis) | [Honey](https://www.joinhoney.com/shop/florasis) | 4% | **5%** | new all-time high |
-| [Heirloom Traditions Paint](https://mt5-byte.github.io/rakuten-honey-tracker/#store=heirloom-traditions-paint) | [Honey](https://www.joinhoney.com/shop/heirloom-traditions-paint) | not offered | **5%** | 2.0× the usual 2.5% |
-| [Intrepid Travel](https://mt5-byte.github.io/rakuten-honey-tracker/#store=intrepidtravel) | [Rakuten](https://www.rakuten.com/shop/intrepidtravel) | 2.5% | **5%** | 2.0× the usual 2.5%; new all-time high |
-| [Kaplan](https://mt5-byte.github.io/rakuten-honey-tracker/#store=kaplan) | [Honey](https://www.joinhoney.com/shop/kaplan) | 4% | **5%** | new all-time high |
-| [Little English ](https://mt5-byte.github.io/rakuten-honey-tracker/#store=little-english) | [Honey](https://www.joinhoney.com/shop/little-english) | not offered | **5%** | 5.0× the usual 1% |
-| [ohora US](https://mt5-byte.github.io/rakuten-honey-tracker/#store=ohora-us) | [Honey](https://www.joinhoney.com/shop/ohora-us) | 3% | **5%** | new all-time high |
-| [Patagonia](https://mt5-byte.github.io/rakuten-honey-tracker/#store=patagonia) | [Rakuten](https://www.rakuten.com/shop/patagonia) | 2% | **5%** | 2.5× the usual 2% |
-| [Sportsman's Guide](https://mt5-byte.github.io/rakuten-honey-tracker/#store=thesportsmansguide) | [Honey](https://www.joinhoney.com/shop/the-sportsmans-guide) | 4% | **5%** | new all-time high |
-| [Athena Club](https://mt5-byte.github.io/rakuten-honey-tracker/#store=athenaclub) | [Honey](https://www.joinhoney.com/shop/athena-club-us) | 3% | **4%** | new all-time high |
-| [boohoo](https://mt5-byte.github.io/rakuten-honey-tracker/#store=boohoo) | [Honey](https://www.joinhoney.com/shop/boohoo) | 0.5% | **4%** | 8.0× the usual 0.5% |
-| [Casper](https://mt5-byte.github.io/rakuten-honey-tracker/#store=casper) | [Honey](https://www.joinhoney.com/shop/casper) | 2% | **4%** | 2.0× the usual 2%; new all-time high |
-| [Christy Sports](https://mt5-byte.github.io/rakuten-honey-tracker/#store=christysports) | [Rakuten](https://www.rakuten.com/shop/christysports) | 2% | **4%** | 2.0× the usual 2% |
-| [Electronic Express](https://mt5-byte.github.io/rakuten-honey-tracker/#store=electronic-express) | [Honey](https://www.joinhoney.com/shop/electronic-express) | 3% | **4%** | new all-time high |
-| [Fleur du Mal](https://mt5-byte.github.io/rakuten-honey-tracker/#store=fleurdumal) | [Honey](https://www.joinhoney.com/shop/fleurdumal) | 2% | **4%** | 2.0× the usual 2% |
-| [Groupon](https://mt5-byte.github.io/rakuten-honey-tracker/#store=groupon.htm) | [Honey](https://www.joinhoney.com/shop/groupon) | 3% | **4%** | new all-time high |
-
-…and 42 more on the site.
+| [Surfshark](https://mt5-byte.github.io/rakuten-honey-tracker/#store=surfshark) | [Rakuten](https://www.rakuten.com/shop/surfshark) | 95% | **100%** | +5 points since last check; 5.0× the usual 20%; new all-time high |
+| [Magazines.com](https://mt5-byte.github.io/rakuten-honey-tracker/#store=magazines) | [Rakuten](https://www.rakuten.com/shop/magazines) | 40% | **60%** | +20 points since last check; 3.0× the usual 20%; new all-time high |
+| [1Password](https://mt5-byte.github.io/rakuten-honey-tracker/#store=1password) | [Rakuten](https://www.rakuten.com/shop/1password) | 20% | **45%** | +25 points since last check; 3.0× the usual 15%; new all-time high |
+| [e.l.f. Cosmetics](https://mt5-byte.github.io/rakuten-honey-tracker/#store=elfcosmetics) | [Rakuten](https://www.rakuten.com/shop/elfcosmetics) | 10% | **15%** | +5 points since last check; 3.0× the usual 5%; new all-time high |
+| [Stuart Weitzman](https://mt5-byte.github.io/rakuten-honey-tracker/#store=stuartweitzman) | [Rakuten](https://www.rakuten.com/shop/stuartweitzman) | 10% | **15%** | +5 points since last check; 7.5× the usual 2%; new all-time high |
+| [Stuart Weitzman Outlet](https://mt5-byte.github.io/rakuten-honey-tracker/#store=stuartweitzmanoutlet) | [Rakuten](https://www.rakuten.com/shop/stuartweitzmanoutlet) | 10% | **15%** | +5 points since last check; 7.5× the usual 2%; new all-time high |
+| [KiwiCo](https://mt5-byte.github.io/rakuten-honey-tracker/#store=kiwico) | [Rakuten](https://www.rakuten.com/shop/kiwico) | 10% | **12%** | 3.0× the usual 4%; new all-time high |
+| [Oakley](https://mt5-byte.github.io/rakuten-honey-tracker/#store=oakley) | [Rakuten](https://www.rakuten.com/shop/oakley) | 10% | **up to 12%** | 3.0× the usual 4%; new all-time high |
+| [Ray-Ban](https://mt5-byte.github.io/rakuten-honey-tracker/#store=ray-ban) | [Rakuten](https://www.rakuten.com/shop/ray-ban) | 10% | **up to 12%** | 3.0× the usual 4%; new all-time high |
+| [SIXT rent the car](https://mt5-byte.github.io/rakuten-honey-tracker/#store=sixt) | [Rakuten](https://www.rakuten.com/shop/sixt) | 11% | **12%** | 3.0× the usual 4%; new all-time high |
+| [Sunglass Hut](https://mt5-byte.github.io/rakuten-honey-tracker/#store=sunglasshut) | [Rakuten](https://www.rakuten.com/shop/sunglasshut) | 10% | **up to 12%** | 3.0× the usual 4%; new all-time high |
+| [Delta Faucet](https://mt5-byte.github.io/rakuten-honey-tracker/#store=deltafaucet) | [Honey](https://www.joinhoney.com/shop/delta-faucet) | 5% | **10%** | crossed 10%; +5 points since last check; 2.0× the usual 5% |
+| [J.Crew](https://mt5-byte.github.io/rakuten-honey-tracker/#store=jcrew) | [Rakuten](https://www.rakuten.com/shop/jcrew) | 2% | **10%** | crossed 10%; +8 points since last check; 5.0× the usual 2% |
+| [Dell Refurbished Computers](https://mt5-byte.github.io/rakuten-honey-tracker/#store=dellrefurbishedcomputers) | [Rakuten](https://www.rakuten.com/shop/dellrefurbishedcomputers) | 2% | **9%** | +7 points since last check; 4.5× the usual 2% |
+| [Lowe's](https://mt5-byte.github.io/rakuten-honey-tracker/#store=lowes) | [Rakuten](https://www.rakuten.com/shop/lowes) | 2% | **up to 8%** | +6 points since last check; 8.0× the usual 1%; new all-time high |
+| [StubHub](https://mt5-byte.github.io/rakuten-honey-tracker/#store=stubhub) | [Rakuten](https://www.rakuten.com/shop/stubhub) | 2% | **7%** | +5 points since last check; 3.5× the usual 2%; new all-time high |
+| [360 Cookware](https://mt5-byte.github.io/rakuten-honey-tracker/#store=360cookware) | [Honey](https://www.joinhoney.com/shop/360cookware) | not offered | **6%** | 2.4× the usual 2.5% |
+| [Athleta](https://mt5-byte.github.io/rakuten-honey-tracker/#store=athleta) | [Rakuten](https://www.rakuten.com/shop/athleta) | 2% | **6%** | 3.0× the usual 2% |
+| [Bombas](https://mt5-byte.github.io/rakuten-honey-tracker/#store=bombas) | [Rakuten](https://www.rakuten.com/shop/bombas) | 2% | **6%** | 3.0× the usual 2% |
+| [Chewy](https://mt5-byte.github.io/rakuten-honey-tracker/#store=chewy) | [Rakuten](https://www.rakuten.com/shop/chewy) | 2% | **6%** | 3.0× the usual 2%; new all-time high |
+| [Philips Home Appliances](https://mt5-byte.github.io/rakuten-honey-tracker/#store=philips) | [Rakuten](https://www.rakuten.com/shop/philips) | 4% | **6%** | 3.0× the usual 2%; new all-time high |
+| [Ring Concierge](https://mt5-byte.github.io/rakuten-honey-tracker/#store=ringconcierge) | [Rakuten](https://www.rakuten.com/shop/ringconcierge) | 2% | **6%** | 3.0× the usual 2% |
+| [Sephora](https://mt5-byte.github.io/rakuten-honey-tracker/#store=sephora) | [Rakuten](https://www.rakuten.com/shop/sephora) | 2% | **6%** | 3.0× the usual 2%; new all-time high |
+| [SHEIN](https://mt5-byte.github.io/rakuten-honey-tracker/#store=sheinside) | [Rakuten](https://www.rakuten.com/shop/sheinside) | 3% | **6%** | 3.0× the usual 2% |
+| [EMU Australia US](https://mt5-byte.github.io/rakuten-honey-tracker/#store=emu-australia-us) | [Honey](https://www.joinhoney.com/shop/emu-australia-us) | not offered | **5%** | 5.0× the usual 1% |
+| [Lockly](https://mt5-byte.github.io/rakuten-honey-tracker/#store=lockly) | [Rakuten](https://www.rakuten.com/shop/lockly) | 2% | **5%** | 2.5× the usual 2% |
+| [Logitech](https://mt5-byte.github.io/rakuten-honey-tracker/#store=logitech) | [Rakuten](https://www.rakuten.com/shop/logitech) | 2% | **4%** | 2.0× the usual 2% |
+| [Logitech G](https://mt5-byte.github.io/rakuten-honey-tracker/#store=logitechg) | [Rakuten](https://www.rakuten.com/shop/logitechg) | 2% | **4%** | 2.0× the usual 2% |
+| [Nana Jacqueline](https://mt5-byte.github.io/rakuten-honey-tracker/#store=nana-jacqueline) | [Honey](https://www.joinhoney.com/shop/nana-jacqueline) | not offered | **3%** | 3.0× the usual 1% |
+| [BARK](https://mt5-byte.github.io/rakuten-honey-tracker/#store=barkco) | [Rakuten](https://www.rakuten.com/shop/barkco) | $20 | **up to $37.5** | 3.0× the usual $12.5; new all-time high |
+| [Kraken](https://mt5-byte.github.io/rakuten-honey-tracker/#store=kraken) | [Rakuten](https://www.rakuten.com/shop/kraken) | $50 | **$150** | 3.0× the usual $50; new all-time high |
+| [SoFi Student Loan Refinance](https://mt5-byte.github.io/rakuten-honey-tracker/#store=sofistudentloanrefinance) | [Rakuten](https://www.rakuten.com/shop/sofistudentloanrefinance) | $150 | **$300** | 3.0× the usual $100; new all-time high |
+| [Square](https://mt5-byte.github.io/rakuten-honey-tracker/#store=squareup) | [Rakuten](https://www.rakuten.com/shop/squareup) | $20 | **$30** | 3.0× the usual $10; new all-time high |
+| [Straight Talk](https://mt5-byte.github.io/rakuten-honey-tracker/#store=straighttalk) | [Rakuten](https://www.rakuten.com/shop/straighttalk) | $12 | **$18** | 3.0× the usual $6; new all-time high |
+| [Visible](https://mt5-byte.github.io/rakuten-honey-tracker/#store=visible) | [Rakuten](https://www.rakuten.com/shop/visible) | $40 | **$60** | 3.0× the usual $20; new all-time high |
 
 [Open the tracker](https://mt5-byte.github.io/rakuten-honey-tracker/) · [RSS feed](https://mt5-byte.github.io/rakuten-honey-tracker/data/feed.xml)
