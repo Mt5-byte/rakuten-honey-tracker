@@ -605,7 +605,9 @@
       state.rows = data.stores || [];
       state.byKey = new Map(state.rows.map((r) => [r.key, r]));
     } catch (e) {
-      $("#app").innerHTML = `<div class="error"><b>The tracker data could not be loaded.</b><br>${esc(e.message)}. If this site was just set up, the first check may still be running — try again in a few minutes.</div>`;
+      $("#boot").className = "error";
+      $("#boot").setAttribute("role", "alert");
+      $("#boot").innerHTML = `<b>The tracker data could not be loaded.</b><br>${esc(e.message)}. Please refresh to try again.`;
       return;
     }
     $("#app").hidden = false;
